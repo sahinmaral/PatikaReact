@@ -1,0 +1,37 @@
+#container{
+    width:400px;
+    background-color: rgba(210, 222, 230, 0.692);
+    padding: 20px;
+}
+
+input{
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding:5px;
+}
+
+ul,li{
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+}
+
+.list{
+    margin:15px 0;   
+}
+
+.list li{
+    padding:5px;
+    margin-bottom: 2px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px 0;
+}

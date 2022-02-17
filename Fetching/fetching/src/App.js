@@ -1,10 +1,10 @@
 import './App.css';
-import Contacts from './components/Contacts/index'
+import Users from './components/Users'
 
 function App() {
   return (
     <div className="App">
-        <Contacts/>
+        <Users/>
     </div>
   );
 }
