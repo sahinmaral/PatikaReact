@@ -24,7 +24,7 @@ button {
 body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-	background: #f5f5f5;
+	background: #c3c1c1;
 	color: #4d4d4d;
 	min-width: 230px;
 	max-width: 550px;
@@ -217,7 +217,7 @@ body {
 }
 
 .todo-list li.completed label {
-	color: #d9d9d9;
+	color: #b2a6a6;
 	text-decoration: line-through;
 }
 
@@ -259,7 +259,7 @@ body {
 .footer {
 	color: #777;
 	padding: 10px 15px;
-	height: 25px;
+	height: 20px;
 	text-align: center;
 	border-top: 1px solid #e6e6e6;
 }
@@ -303,10 +303,9 @@ body {
 
 .filters li button {
 	color: inherit;
-	margin: 3px;
-	padding: 3px 7px;
+	padding: 0px 7px;
 	text-decoration: none;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	border-radius: 3px;
 	cursor: pointer; /* Because of Mavo: we don't use the href attribute in such situations */
 }
@@ -316,7 +315,7 @@ body {
 }
 
 .filters li button.selected {
-	border-color: rgba(175, 47, 47, 0.2);
+	border-color: rgba(0, 0, 0, 0.2);
 }
 
 .clear-completed,
@@ -334,7 +333,7 @@ html .clear-completed:active {
 
 .info {
 	margin: 65px auto 0;
-	color: #bfbfbf;
+	color: #786d6d;
 	font-size: 10px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	text-align: center;

@@ -1,24 +1,31 @@
 import './App.css';
-import InfoFooter from './components/InfoFooter';
-import TaskForm from './components/TaskForm';
-import Footer from './components/Footer';
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer'
+import Form from './components/ToDo/Form'
+import List from './components/ToDo/List'
+import {useEffect, useState} from 'react'
 
 function App() {
+  
+  if(!JSON.parse(localStorage.getItem('tasks')))
+    localStorage.setItem('tasks','[]')
+  
+  const [tasks,setTasks] = useState(JSON.parse(localStorage.getItem('tasks')))
+
+  useEffect(()=>{
+    localStorage.setItem('tasks',JSON.stringify(tasks))
+  },[tasks])
+
   return (
     <div>
       <section className="todoapp">
         <header className="header">
           <h1>todos</h1>
-          <TaskForm />
+          <Form setTasks={setTasks} tasks={tasks}/>
         </header>
-        {/* <!-- This section should be hidden by default and shown when there are todos --> */}
-      
-
-        {/* <!-- This footer should hidden by default and shown when there are todos --> */}
-        <Footer />
+        <List tasks={tasks} setTasks={setTasks}/>
       </section>
-
-      <InfoFooter />
+      <Footer />
     </div>
   );
 }
