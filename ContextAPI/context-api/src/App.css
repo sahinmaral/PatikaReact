@@ -1,0 +1,19 @@
+.app {
+  text-align: center;
+  height:100vh;
+}
+
+p{
+  margin:0;
+}
+
+.light{
+  color:black;
+  background-color: white;
+}
+
+.dark{
+  color:white;
+  background-color: rgb(57, 55, 55);
+}
+
