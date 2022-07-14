@@ -17,7 +17,7 @@ const items = [
 ];
 
 const initialState = {
-  filtered: items,
+  items,
   filter: "",
 };
 
@@ -39,17 +39,17 @@ export const notesSlice = createSlice({
       },
     },
     deleteNote: (state, action) => {
-      state.filtered = state.filtered.filter(
+      state.items = state.items.filter(
         (item) => item.id !== action.payload
       );
     },
     setFilter: (state, action) => {
       state.filter = action.payload;
-      state.filtered = items.filter((item) => item.note.includes(state.filter));
     },
   },
 });
 
-export const getNotes = (state) => state.notes.filtered;
+export const getNotes = (state) => state.notes.items;
+export const getFilter = (state) => state.notes.filter;
 export const { addNote, deleteNote, setFilter } = notesSlice.actions;
 export default notesSlice.reducer;
