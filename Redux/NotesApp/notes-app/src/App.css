@@ -1,0 +1,27 @@
+body {
+  background-color: "#eaeaea";
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 450px) {
+  .color-box{
+    display:none;
+  }
+  .color-box-dropdown {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .color-box{
+    display:inline;
+  }
+  .color-box-dropdown {
+    display: none;
+  }
+}
+
+
