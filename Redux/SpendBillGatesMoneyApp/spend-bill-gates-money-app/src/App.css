@@ -1,0 +1,51 @@
+body {
+  background-color: #f1f2f6;
+}
+
+.gradient-green-bg{
+  background: #43e97b;
+  background: -webkit-linear-gradient(to bottom, rgba(67, 233, 123, 0.9), rgba(56, 249, 215, 0.9));
+  background: linear-gradient(to bottom, rgba(67, 233, 123, 0.9), rgba(56, 249, 215, 0.9));
+}
+
+.gradient-green-color{
+  color: #43e97b;
+}
+
+.header-area {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  margin:0 auto;
+}
+
+.header-area p{
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size:32px
+}
+
+.money-area {
+  margin: 0 auto;
+  padding: 15px;
+  color:#fff;
+  font-weight: 700;
+  font-size:32px;
+  text-align:center;
+}
+
+.items-area{
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
