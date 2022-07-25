@@ -1,0 +1,160 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: url("../public/wallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box {
+  background-color: rgb(22, 57, 76, 0.5);
+  border-radius: 15px;
+  width: 700px;
+  color: white;
+  border: 5px solid #4a6e84;
+}
+
+.location {
+  margin-top: 1.5rem;
+}
+
+.country-box {
+  height: 150px;
+  padding: 10px 20px 0 10px;
+  margin: 100px auto 0px auto;
+}
+
+.country-box label {
+  font-size: 25px;
+  margin-top: 2.5%;
+  margin-left: 20px;
+}
+
+.set-country{
+  margin:20px 10%;
+}
+
+.country-box button {
+  background-color: rgba(43, 155, 215, 0.5);
+  font-weight: 550;
+  width: 500px;
+  margin: 0 2.5%;
+}
+
+.country-box button:hover {
+  background-color: rgba(114, 243, 239, 0.5);
+  color:black;
+}
+
+.country-box input {
+  width: 400px;
+  height: 40px;
+  margin-top: 2.5%;
+}
+
+.weather-box {
+  height: 500px;
+  padding: 20px 0px 0 0;
+  margin: 10px auto;
+}
+
+.weather-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.current-weather {
+  padding: 3rem;
+}
+
+.current-weather .current-weather-iconbox p {
+  font-size: 25px;
+}
+
+.current-temp {
+  font-size: 35px;
+  margin-top: 3%;
+}
+
+.current-temp-min {
+  display: none;
+}
+
+.weather-card-list {
+  margin: 0px 20px 0px 20px;
+}
+
+.weather-card {
+  width: 100px;
+  text-align: center;
+}
+
+.weather-card img{
+  width: 50px;
+  height: 50px;
+}
+
+.weather-card .weather-card-day {
+  font-size: 20px;
+}
+
+.weather-card .weather-card-temp {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 320px;
+  }
+
+  .location {
+    margin-top: 0rem;
+  }
+
+  .weather-box {
+    height: 470px;
+  }
+
+  .weather-card {
+    width: 50px;
+  }
+
+  .current-weather {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .current-temp {
+    display: none;
+  }
+
+  .current-temp-min {
+    display: block;
+  }
+
+  .set-country{
+    margin:20px 10%;
+  }
+  
+  .country-box button {
+    margin: 0 6%;
+    font-weight: 550;
+    width: 200px;
+  }
+
+  .country-box input {
+    width: 150px;
+    margin-top: 5%;
+  }
+
+  .country-box label {
+    font-size: 17px;
+    margin-top: 8%;
+  }
+
+  .weather-info {
+    margin-top: 20px;
+  }
+}
