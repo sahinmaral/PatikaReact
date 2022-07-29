@@ -1,0 +1,81 @@
+.header-area {
+  text-align: center;
+  margin-top: 50px;
+  font-family: serif;
+}
+
+.header-area p {
+  font-weight: 700;
+}
+
+.report-card-container {
+  width: 250px;
+  height: auto;
+}
+
+.report-card {
+  height: 300px;
+  padding: 35px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.report-card h2 {
+  font-size: 25px;
+}
+
+.report-card-under {
+  width: 100%;
+  height: 10px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.country-select {
+  margin-top: 50px;
+}
+
+.country-select select {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.graphs {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .report-card-container {
+    width: auto;
+    height: auto;
+    margin: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
