@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(255, 205, 56);
+}
+
+.header-area{
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.help-button{
+  background-color: rgb(255,238,180);
+  width: 50px;
+  height: 50px;
+  margin-right:20px;
+  margin-top:20px;
+  padding-top:12px;
+  text-align: center;
+}
+
+.help-button-active{
+  background-color: rgb(255,238,180);
+  width: 50px;
+  height: 50px;
+  margin-right:20px;
+  margin-top:20px;
+  padding-top:12px;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.area {
+  background-color: rgb(255, 221, 103);
+  width: 500px;
+  height: 600px;
+  margin: 0 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.area textarea {
+  resize: none;
+  border: 0px;
+  margin: 0px;
+}
+
+.area textarea:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(232,201,92); 
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1070px) {
+  .grid-container {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .area {
+    margin: 10px 0px;
+    width: 70%;
+  }
+
+  .area textarea {
+    width: 100%;
+  }
+}
